@@ -1,0 +1,39 @@
+{
+    "name": "decriptedk/google-calendar-bundle",
+    "description": "This bundle provide an easy interaction with Google Calendar.",
+    "type": "symfony-bundle",
+    "authors": [{
+            "name": "Nicolas BONNEAU",
+            "email": "nicolas.bonneau.vlb@gmail.com"
+        }],
+    "keywords": [
+        "google",
+        "calendar",
+        "bundle",
+        "google calendar",
+        "google bundle",
+        "calendar bundle"
+    ],
+    "license": [
+        "MIT"
+    ],
+    "require": {,
+        "friendsofsymfony/jsrouting-bundle": "^1.6",
+        "google/apiclient": "^2.0",
+        "ci/restclientbundle": "^2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Decriptedk": ""
+        }
+    },
+    "target-dir": "Decriptedk",
+    "repositories": [{
+            
+        }],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        }
+    }
+}

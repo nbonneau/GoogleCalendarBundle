@@ -21,6 +21,8 @@ class NbonneauGoogleCalendarExtension extends Extension
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
+        
+        $container->setParameter(ConfigurationInterface::CONFIG_NODE_NAME, $config);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
